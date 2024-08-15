@@ -24,9 +24,13 @@ import {
   tripguide,
   threejs,
 } from "../assets";
-import angular from "../assets/tech/angular.png"
-import sweven from "../assets/company/sweven.jpg"
-import freelancer from "../assets/company/freelancer.jpg"
+import bank from "../assets/company/bank.png"
+import youtube from "../assets/company/youtube.jpg"
+import medcine from "../assets/company/medcine.jpg"
+import library from "../assets/company/library.png"
+import angular from "../assets/tech/angular.png";
+import sweven from "../assets/company/sweven.jpg";
+import freelancer from "../assets/company/freelancer.jpg";
 export const navLinks = [
   {
     id: "about",
@@ -44,21 +48,21 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Mobile App Developer",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  // {
+  //   title: "Content Creator",
+  //   icon: creator,
+  // },
 ];
 
 const technologies = [
@@ -118,7 +122,6 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
- 
 ];
 
 const experiences = [
@@ -161,99 +164,107 @@ const experiences = [
       "Executed comprehensive testing with Jest, Mocha, and Cypress",
     ],
   },
-  
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Beniyam created a website that effectively represents our product.",
+    name: "Betty Gizaw",
+    designation: "Senior Software Engineer",
+    company: "Sweven Trading PLC",
+    image: "https://randomuser.me/api/portraits/women/88.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Beniyam is a web developer who genuinely focuses on client satisfaction.",
+    name: "Solomon Tadesse",
+    designation: "CEO",
+    company: "Sweven Trading PLC",
+    image: "https://randomuser.me/api/portraits/men/49.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Beniyam's optimizations improved our website's traffic noticeably",
+    name: "Gere Reda",
+    designation: "Senior Software Engineer",
+    company: "Citibank",
+    image: "https://randomuser.me/api/portraits/men/80.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Library Management Mobile App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Library management mobile app developed using React Native, featuring user-friendly interfaces for browsing, borrowing returning books and inventory tracking.",
+    tags: [
+      {
+        name: "react Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JSON Sever",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: library,
+    source_code_link: "https://github.com/Bennymedic/Library-management-mobile-app",
+  },
+  {
+    name: "Youtube Clone",
+    description:
+      "Modern YouTube Clone Application developed using React JS and Material UI 5, incorporating a responsive user interface and real-time search functionality to enhance user engagement and experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Material UI",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: youtube,
+    source_code_link: "https://github.com/Bennymedic/YouTube-Clone-Application",
   },
   {
-    name: "Job IT",
+    name: "Medication Reviews/Side-Effects app",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Medication Reviews/Side-Effects app where users can browse, review, and report side effects, featuring JWT authentication and ReactiveFormsModule for form handling.",
     tags: [
       {
-        name: "react",
+        name: "Angular",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Angular Material",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: medcine,
+    source_code_link: "https://github.com/Bennymedic/Medication-Reviews-Side-Effects-application",
   },
   {
-    name: "Trip Guide",
+    name: "Banking App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Banking app with a finance management dashboard that connects multiple bank accounts, displays real-time transactions, and allows you to transfer money to other users on the platform.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "react",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: bank,
+    source_code_link: "https://github.com/Bennymedic/banking",
   },
 ];
 
